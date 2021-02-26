@@ -65,6 +65,7 @@ body {
 }
 
 /*TOP COMPONENT STYLE */
+
 .leftSide {
   /* border: 1px solid white; */
   width: 65%;
@@ -466,7 +467,7 @@ background: #2E325C;
    }
   }
 
-  @media screen and (max-width:780px){
+  @media screen and (max-width:800px){
     .cards{
       display: block;
      margin: 0 auto;
