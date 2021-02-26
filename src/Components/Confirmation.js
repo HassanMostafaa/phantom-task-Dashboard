@@ -8,7 +8,7 @@ const Confirmation = ({ setConfCardState, ConfCardState }) => {
         <div className="confirmationCard">
           <p
             onClick={() => setConfCardState(!ConfCardState)}
-            style={{ marginRight: "-340px", cursor: "pointer" }}
+            style={{ marginRight: "-260px", cursor: "pointer" }}
           >
             <img src={x} alt="" />
           </p>

@@ -84,7 +84,8 @@ body {
   padding: 20px ;
   border-radius: 10px;
   background-color: #2B2F55;
- 
+  box-shadow: 0 0 25px rgba(0, 0, 0, .05);
+
   
 }
 
@@ -93,6 +94,8 @@ body {
   padding: 20px;
   width: 35%;
   min-width: 20%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, .05);
+
   border-radius: 10px;
 }
 .card button {
@@ -205,22 +208,28 @@ table thead tr th:nth-last-child(7) {
   width: auto;
   padding: 5px 10px;
   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, .150);
 }
 .fail{
   background-color: #4D3343;
   color:#FE7448 ;
   width: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .150);
   padding: 5px 10px;
   border-radius: 5px;
 }
 
 /*SIDE BAR CARTS STYLES */
-
+.sidebar{
+  margin: 0 5px;
+}
 .firstCard {
   padding: 30px;
   background-color: #2B2F55;
   border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, .05);
   margin-bottom: 20px;
+  
 }
 
 .firstCard .text p {
@@ -261,6 +270,8 @@ table thead tr th:nth-last-child(7) {
 }
 
 .secondCard {
+  box-shadow: 0 0 25px rgba(0, 0, 0, .05);
+
   padding: 20px;
   background-color: #2B2F55;
   border-radius: 10px;
@@ -285,6 +296,8 @@ table thead tr th:nth-last-child(7) {
   border-radius: 10px;
   margin-bottom: 20px;
   display: flex;
+  box-shadow: 0 0 25px rgba(0, 0, 0, .05);
+
   justify-content: space-between;
   align-items: center;
 
@@ -304,6 +317,8 @@ table thead tr th:nth-last-child(7) {
   border-radius: 10px;
   margin-bottom: 20px;
   display: flex;
+  box-shadow: 0 0 25px rgba(0, 0, 0, .05);
+
   justify-content: space-between;
   align-items: center;
 }
@@ -344,6 +359,7 @@ border: 1px solid #323662;
   padding: 20px;
   background-color: #2C3159;
   color: #f4f4f4;
+  border: 1px solid #3D447B;
   border-radius: 10px;
   box-shadow:  0 0 15px rgba(0, 0, 0, 0.178);
   
@@ -437,32 +453,44 @@ background: #2E325C;
   
   }
   
-  @media screen and (max-width:1100px){
-    .sidebar{
-    }
- 
-
- 
-  }
-  @media screen and (max-width:700px){
+  @media screen and (max-width:1000px){
     .cards{
       display: block;
      margin: 0 auto;
-   
+  
    
     }
     .card.cardImg ,.card{
      width: 100%;
      margin: 15px 0; 
    }
+  }
+
+  @media screen and (max-width:780px){
+    .cards{
+      display: block;
+     margin: 0 auto;
+   width: 85vw;
+   
+    }
+    .card.cardImg ,.card{
+     width: 100%;
+     margin: 15px 0; 
+   }
+   .firstCard{
+    margin: 20px auto;
+   }
    .user-data{
-    display: none;
+    padding: 0;
    }
    .container{
-     width: 90%;
+     width: 85vw;
      padding: 0;
      margin: 0 auto;
      display: block;
+   }
+   table{
+    width: 85vw;
    }
    table thead tr th:nth-last-child(4) {
    display: none;
@@ -475,5 +503,30 @@ background: #2E325C;
    }
    table tbody tr td:nth-last-child(3) {
      display: none;
+    }
+    .notificationsCard{
+      left: 30px;
+      width: 350px;
+      padding: 5;
+    }
+    .notification{
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .transferCard{
+      width: 350px;
+    }
+    .transferCard .transferCardBtnsArea {
+      padding: 10px;
+      margin-top: -5px;
+    }
+    .transferCard .transferCardBtnsArea button{
+     padding: 14px 30px;
+    margin: 10px;
+    }
+    .confirmationCard{
+      min-width: 350px;
+      max-width: 400px;
     }
   }

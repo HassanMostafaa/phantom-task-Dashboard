@@ -5,7 +5,7 @@ import Notification from "./Notification";
 
 const User = ({ active, setActive }) => {
   return (
-    <div className="user-data">
+    <div id="user" className="user-data">
       <div className="user-data-positioning">
         <div
           className="notif"

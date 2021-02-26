@@ -6,9 +6,13 @@ import appleLogo from "./imgs/Apple_logo_black.png";
 import winLogo from "./imgs/Windows_logo_-_2012.png";
 
 const SideComp = ({ setTransferState }) => {
+  const transferClicked = () => {
+    setTransferState(true);
+    window.location.href = "#user";
+  };
   return (
     <div>
-      <div className="sidebar">
+      <div id="sidebar" className="sidebar">
         <div className="firstCard">
           <div className="text">
             <p>License key</p>
@@ -55,9 +59,7 @@ const SideComp = ({ setTransferState }) => {
             <p style={{ color: "#AAACBB", fontSize: "14px" }}>Current Email:</p>
             <p>anthony2142@emaill.com</p>
           </div>
-          <button onClick={() => setTransferState(true)}>
-            Transfer to &#8594;
-          </button>
+          <button onClick={transferClicked}>Transfer to &#8594;</button>
         </div>
         <div className="lastCard">
           <div className="lastCardText">
